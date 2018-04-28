@@ -1,0 +1,6 @@
+- hosts: ansipantsi
+  tasks:
+  - name: i want to bash
+    apk:
+      name: bash
+      update_cache: yes

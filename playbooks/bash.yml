@@ -1,0 +1,10 @@
+- name: Alpine Basher
+  hosts: '{{ host }}'
+  gather_facts: false
+  tasks:
+  # use ansible host -m setup to get a list of variables
+#  - debug: msg="Host is {{ ansible_default_ipv4.address }}"
+  - name: i want to bash
+    apk:
+      name: bash
+      update_cache: yes
